@@ -20,11 +20,11 @@ int positive(int a, int b) //Makes sure the Cache size is positive
 }
 
 #define TBUFF_SIZE 16 //Size of the cache
-#define P_FRAMES 128 //nuber of page frames, change this to 128 if you want to translate out of 128 bits
-#define P_MASK 127 // change to 127
+#define P_FRAMES 256 //nuber of page frames, change this to 128 if you want to translate out of 128 bits
+#define P_MASK 255 // Page Mask, change to 127
 #define P_SIZE 256
 #define O_BITS 8 // number of bits for the offset
-#define O_MASK 255 
+#define O_MASK 255 //Offset Mask
 
 #define MEM_SIZE P_FRAMES * P_SIZE
 
